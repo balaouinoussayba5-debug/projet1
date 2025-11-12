@@ -9,10 +9,10 @@ function init_game(): void {
     if (!isset($_SESSION['target'])) {
         $_SESSION['target'] = random_int(0, 100);
         $_SESSION['history'] = [];
-        $_SESSION['attempts_used'] = 0;        // essais déjà faits
-        $_SESSION['max_attempts'] = 4;         // max essais
-        $_SESSION['attempts_remaining'] = 4;   // essais restants
-        $_SESSION['won'] = false;              // déjà gagné ?
+        $_SESSION['attempts_used'] = 0;        
+        $_SESSION['max_attempts'] = 4;         
+        $_SESSION['attempts_remaining'] = 4;   
+        $_SESSION['won'] = false;              
     }
 }
 
